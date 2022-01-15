@@ -228,7 +228,7 @@
                     <a href="#" data-menu="menu-join" class="btn btn-m bg-white color-black font-700">Accept</a>
                     <a href="#" data-menu="menu-join" class="btn btn-m border-white color-white font-700 ms-3">Decline</a>
                 </div> -->
-                <div class="countdown row mb-4 mt-5 ms-4 me-4 ps-3">
+                <div class="countdown row mb-4 mt-5 ms-4 me-4">
                     <div class="disabled">
                         <h1 class="mb-0 color-white font-36 font-900" id="years"></h1>
                         <p class="mt-n1 color-white font-11 opacity-30">years</p>
@@ -245,10 +245,10 @@
                         <h1 class="mb-0 color-white font-36 font-900" id="minutes"></h1>
                         <p class="mt-n1 color-white font-11 opacity-30">minutes</p>
                     </div>
-                    <!-- <div class="col-3 pe-0 ps-0">
+                    <div class="col-3 pe-0 ps-0">
                         <h1 class="mb-0 color-white font-36 font-900" id="seconds"></h1>
                         <p class="mt-n1 color-white font-11 opacity-30">seconds</p>
-                    </div>	 -->
+                    </div>	
                     <a href="#" data-menu="menu-join" class="btn btn-m bg-white color-black font-700">Add to Calendar</a>
                     <!-- <a href="#" data-menu="menu-join" class="btn btn-m border-white color-white font-700 ms-3">Decline</a> -->
                 </div>
@@ -258,13 +258,17 @@
 
         <!-- Schedule-->
         <div class="card card-style">
+            <div class="content">
+                <p class="font-600 color-highlight mb-n1">Saturday, 26th February 2022</p>
+                <h1>Event Schedule</h1>
+            </div>
             <div class="cal-footer">
                 <div class="cal-schedule">
                     <em>10:00 AM<br>11:00 AM</em>
                     <strong>Nikah</strong>
                     <span><i class="fa fa-building"></i>Masjid Nilai 3</span>
                 </div>
-                <div class="cal-schedule bg-highlight">
+                <div class="cal-schedule">
                     <em>11:00 AM<br>03:00 PM</em>
                     <strong class="color-white">Reception & Sanding</strong>
                     <span class="color-white"><i class="fa fa-shopping-bag"></i>Dewan Melur, Nilai 3</span>
@@ -274,7 +278,89 @@
 
         <!-- RSVP Form-->
 
+        <div class="card card-style">
+            <div class="content">
+                <h1 class="mb-0">RSVP</h1>
+                <p class="mb-4 opacity-70">Please RSVP to ensure that we can best prepare the reception</p>
+
+                <div class="divider mb-4 mt-3"></div>
+                
+                <a href="#" data-menu="menu-added" class="btn btn-full btn-m rounded-s font-600 gradient-highlight">RSVP on Facebook</a>
+
+                <div class="divider-icon divider mb-4 mt-3"></div>or RSVP here
+                
+
+                
+                <div class="divider mt-3"></div>
+
+                <div class="row mb-0">
+                    <div class="col-12">
+                        <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                            <input type="text" name="contactNameField" value="" class="round-small" id="contactNameField" />
+                            <label for="contactNameField" class="color-highlight font-500">Full Name</label>
+                            <i class="fa fa-times disabled invalid color-red-dark"></i>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-0">
+                    <div class="col-3">
+                        <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                            <input type="number" class="form-control validate-number" id="form1" placeholder="2">
+                            <label for="form1" class="color-highlight font-500">pax</label>
+                            <i class="fa fa-times disabled invalid color-red-dark"></i>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="input-style has-borders no-icon input-style-always-active mb-4">
+                            <label for="form5" class="color-highlight font-500">Meal Preference</label>
+                            <select id="form5">
+                                <option value="default" selected>Dine in</option>
+                                <option value="a">Food pack</option>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-0">
+                    <div class="col-12">
+                        <div class="input-style has-borders no-icon input-style-always-active mb-4">
+                            <label for="form5" class="color-highlight font-500">Attendance</label>
+                            <select id="form5">
+                                <option value="default" selected> Yes I am coming</option>
+                                <option value="a">Sorry cannot make it</option>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider mb-4 mt-3"></div>
+                
+                <a href="#" data-menu="menu-added" class="btn btn-full btn-m rounded-s font-600 gradient-highlight">Send RSVP</a>
+                
+            </div>
+        </div>
+
         <!-- Map Location-->
+
+        <div class="card card-fixed mb-n5" data-card-height="350">
+            <div class="map-full">
+                <iframe src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAM3nxDVrkjyKwdIZp8QOplmBKLRVI5S_Y&center=-33.8569,151.2152&zoom=16&maptype=satellite"></iframe>
+            </div>
+        </div>
+        <div class="card card-clear" data-card-height="350"></div>
+    
 
         <!-- SOP Guidelines-->
 
