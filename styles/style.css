@@ -1129,6 +1129,24 @@ body {
   color: #FFF;
 }
 
+.color-waze {
+  color: #7ec0ee !important;
+}
+
+.bg-waze {
+  background-color: #7ec0ee !important;
+  color: #FFF;
+}
+
+.color-google-map {
+  color: #1EA362 !important;
+}
+
+.bg-google-map {
+  background-color: #1EA362 !important;
+  color: #FFF;
+}
+
 /*Default Colors*/
 .color-white {
   color: #FFF !important;
