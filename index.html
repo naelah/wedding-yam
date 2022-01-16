@@ -382,7 +382,7 @@
                         <div class="divider mb-4 mt-3"></div>
                         
                         <div class="form-button">
-                            <input type="submit" class="btn btn-full btn-m rounded-s font-600 gradient-highlight contactSubmitButton" value="Submit RSVP" data-formId="contactForm" />
+                            <input type="submit" class="btn btn-full btn-m rounded-s font-600 gradient-highlight contactSubmitButton" id="rsvpSumbit" value="Submit RSVP" data-formId="rsvpForm" />
                         </div>
                     </fieldset>
                 </form>
@@ -699,7 +699,7 @@
     var $form = $('form#rsvpForm'),
         url = 'ttps://script.google.com/macros/s/AKfycbzlssq2cZlAgC-X5x8ToYQ9Y1c6SYS12VtCGK0oSw_3pM1wVfWgOA5A69l1aug_zPiI/exec'
 
-    $('#submit-form').on('click', function(e) {
+    $('#rsvpSubmit').on('click', function(e) {
       e.preventDefault();
       var jqxhr = $.ajax({
         url: url,
