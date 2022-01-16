@@ -310,7 +310,7 @@
                         <div class="row mb-0">
                             <div class="col-3">
                                 <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                                    <input type="number" name="pax" class="form-control validate-number" id="rsvpPaxField" placeholder="2">
+                                    <input type="number" name="pax" class="form-control validate-number" value="2" id="rsvpPaxField" placeholder="2">
                                     <label for="form1" class="color-highlight font-500">pax</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
@@ -352,11 +352,11 @@
                                 <div class="input-style has-borders no-icon input-style-always-active mb-4">
                                     <label for="form5" class="color-highlight font-500">I am a </label>
                                     <select name="acquaintance" id="rsvpAcuqaintanceField">
-                                        <option value="default" selected> Friend of Dr. Nordin</option>
-                                        <option value="a">Family</option>
-                                        <option value="a">Friend of Dr. Salwana</option>
-                                        <option value="a">Friend of Haaziqah</option>
-                                        <option value="a">Friend of Azhari</option>
+                                        <option value="nordin" selected> Friend of Dr. Nordin</option>
+                                        <option value="family">Family</option>
+                                        <option value="salwana">Friend of Dr. Salwana</option>
+                                        <option value="haaziqah">Friend of Haaziqah</option>
+                                        <option value="azhari">Friend of Azhari</option>
                                     </select>
                                     <span><i class="fa fa-chevron-down"></i></span>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
@@ -694,4 +694,21 @@
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script>
+
+    var $form = $('form#rsvpForm'),
+        url = 'ttps://script.google.com/macros/s/AKfycbzlssq2cZlAgC-X5x8ToYQ9Y1c6SYS12VtCGK0oSw_3pM1wVfWgOA5A69l1aug_zPiI/exec'
+
+    $('#submit-form').on('click', function(e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+      }).success(
+        window.location.replace("http://www.azharihaaziqah.com");
+      );
+    })
+    </script>
 </body>
