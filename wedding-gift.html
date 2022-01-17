@@ -38,7 +38,7 @@
     </div>
     
     <div class="page-title page-title-fixed">
-        <h1>RSVP</h1>
+        <h1>Send a Gift</h1>
         <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
         <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
         <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
@@ -59,13 +59,14 @@
                     With the current pandemic, contactless gift are preferred. Click the following card to copy the address to mail your gifts.
                 </p>
 
-                <input type="text" value="118 jalan krisoberil satu" id="addrFull">
+                <input type="hidden" value="118, Jalan Laman Cempaka D/4, Kota Seriemas, 71800 Nilai, Negeri Sembilan" id="addrFull">
+                <input type="hidden" value="162731079216" id="acctFull">
 
 
                 <div class="card card-style mx-0 bg-20 preload-img" data-card-height="180" data-src="images/wedding/png/palegradients-asset-10.png">
                     <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
                     <div class="card-top ps-3 pt-3">
-                        <h1 class="color-white font-19">Postcode 40000</h1>
+                        <h1 class="color-white font-19 text-front">Postcode 71800</h1>
                         <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
                     </div>
                     <div class="card-center pe-3">
@@ -75,7 +76,7 @@
                         <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
                     </div>
                     <div class="card-bottom ps-3 pb-2">
-                        <h5 class="color-white">Maryam Haaziqah binti Nordin</h5>
+                        <h5 class="color-white text-front">Maryam Haaziqah binti Nordin</h5>
                         <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
                     </div>
                 </div>
@@ -84,23 +85,28 @@
                     Or transfer money instead
                 </h1>
                 <p>
+                    Scan the following QR code using Maybank Mae app
+                </p>
+                <img height="300px" src="images/wedding/qrcode.png">
+                <br>
+                <p>
                     Click the following card to copy the account number to transfer your monetary gift to the couple
                 </p>
 
                 <div class="card card-style mx-0 bg-20 preload-img" data-card-height="180" data-src="images/wedding/png/palegradients-asset-16.png">
-                    <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                    <a href="" id="acctClipboard" onclick="CopyAccount();return false;" class="stretched-link"></a>
                     <div class="card-top ps-3 pt-3">
-                        <h1 class="color-white font-19">Maybank</h1>
-                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                        <h1 class="color-white font-19 text-front">Maybank</h1>
+                        <a href="" id="acctClipboard" onclick="CopyAccount();return false;" class="stretched-link"></a>
                     </div>
                     <div class="card-center pe-3">
-                        <h4 class="color-white text-end">1234 5678 9101 6345</h4>
-                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                        <h4 class="color-white text-end">1627 3107 9216</h4>
+                        <a href="" id="acctClipboard" onclick="CopyAccount();return false;" class="stretched-link"></a>
                     </div>
                     <div class="card-bottom ps-3 pb-2">
-                        <h5 class="color-white">Maryam Haaziqah binti Nordin</h5>
-                        <h5 class="color-white">Ref: weddinggift</h5>
-                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                        <h5 class="color-white text-front">Maryam Haaziqah binti Nordin</h5>
+                        <h5 class="color-white text-front">Ref: weddinggift</h5>
+                        <a href="" id="acctClipboard" onclick="CopyAccount();return false;" class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -156,20 +162,34 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script>
 
-    function CopyAddress() {
-        var copyText = document.getElementById("addrFull");
-    
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-    
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
-    }
-    
+function CopyAddress() {
+    var copyText = document.getElementById("addrFull");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+
+    /* Alert the copied text */
+    alert("Successfully copied address");
+}
+
+function CopyAccount() {
+    var copyAcct = document.getElementById("acctFull");
+
+    /* Select the text field */
+    copyAcct.select();
+    copyAcct.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyAcct.value);
+
+    /* Alert the copied text */
+    alert("Successfully copied acct number");
+}
+
     
         </script>
 </body>
