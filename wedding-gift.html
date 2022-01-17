@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Azhari & Haaziqah</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-auto-show header-fixed header-logo-center">
+        <a href="index.html" class="header-title">RSVP</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-ring"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="wedding-gift.html"><i class="fa fa-gift"></i><span>Gift</span></a>
+        <a href="wedding-rsvp.html"><i class="fa fa-envelope"></i><span>RSVP</span></a>
+        <a href="#" class="circle-nav active-nav"><i class="fa fa-ring"></i><span>Home</span></a>
+        <a href="wedding-location.html"><i class="fa fa-map-marker-alt"></i><span>Location</span></a>
+        <a href="wedding-calendar.html"><i class="far fa-calendar"></i><span>Calendar</span></a>
+    </div>
+    
+    <div class="page-title page-title-fixed">
+        <h1>RSVP</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+                
+        
+        <div class="card card-style card-full-right">
+            <div class="content">
+                <p class="mb-n1 color-highlight font-600">Send Love</p>
+                <h1>
+                    Send gifts to the love birds
+                </h1>
+                <p>
+                    With the current pandemic, contactless gift are preferred. Click the following card to copy the address to mail your gifts.
+                </p>
+
+                <input type="text" value="118 jalan krisoberil satu" id="addrFull">
+
+
+                <div class="card card-style mx-0 bg-20 preload-img" data-card-height="180" data-src="images/wedding/png/palegradients-asset-10.png">
+                    <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
+                    <div class="card-top ps-3 pt-3">
+                        <h1 class="color-white font-19">Postcode 40000</h1>
+                        <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
+                    </div>
+                    <div class="card-center pe-3">
+                        <h4 class="color-white text-end">118, Jalan Laman Cempaka D/4</h4>
+                        <h4 class="color-white text-end">Kota Seriemas</h4>
+                        <h4 class="color-white text-end">Nilai, Negeri Sembilan</h4>
+                        <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
+                    </div>
+                    <div class="card-bottom ps-3 pb-2">
+                        <h5 class="color-white">Maryam Haaziqah binti Nordin</h5>
+                        <a href="" id="addrClipboard" onclick="CopyAddress();" class="stretched-link"></a>
+                    </div>
+                </div>
+
+                <h1>
+                    Or transfer money instead
+                </h1>
+                <p>
+                    Click the following card to copy the account number to transfer your monetary gift to the couple
+                </p>
+
+                <div class="card card-style mx-0 bg-20 preload-img" data-card-height="180" data-src="images/wedding/png/palegradients-asset-16.png">
+                    <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                    <div class="card-top ps-3 pt-3">
+                        <h1 class="color-white font-19">Maybank</h1>
+                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                    </div>
+                    <div class="card-center pe-3">
+                        <h4 class="color-white text-end">1234 5678 9101 6345</h4>
+                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                    </div>
+                    <div class="card-bottom ps-3 pb-2">
+                        <h5 class="color-white">Maryam Haaziqah binti Nordin</h5>
+                        <h5 class="color-white">Ref: weddinggift</h5>
+                        <a href="" id="acctClipboard" onclick="CopyAcct();return false;" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="divider divider-margins"></div>
+         
+   
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    
+    <!-- Main Menu--> 
+    <div id="menu-share" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-n1"><h1>Share the Love</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="auto_generated" class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="auto_generated" class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>   
+                <a href="auto_generated" class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script>
+
+    function CopyAddress() {
+        var copyText = document.getElementById("addrFull");
+    
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+    
+        /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+    }
+    
+    
+        </script>
+</body>

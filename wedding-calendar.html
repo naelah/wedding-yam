@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Azhari & Haaziqah</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-auto-show header-fixed header-logo-center">
+        <a href="index.html" class="header-title">RSVP</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-ring"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="wedding-gift.html"><i class="fa fa-gift"></i><span>Gift</span></a>
+        <a href="wedding-rsvp.html"><i class="fa fa-envelope"></i><span>RSVP</span></a>
+        <a href="#" class="circle-nav active-nav"><i class="fa fa-ring"></i><span>Home</span></a>
+        <a href="wedding-location.html"><i class="fa fa-map-marker-alt"></i><span>Location</span></a>
+        <a href="wedding-calendar.html"><i class="far fa-calendar"></i><span>Calendar</span></a>
+    </div>
+    
+    <div class="page-title page-title-fixed">
+        <h1>RSVP</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+                
+        
+        <div class="card card-style s card-full-left bg-17 preload-img" data-card-height="230" data-src='images/wedding/bg-2.png'>
+            <div class="card rounded-0 shadow-xl" data-card-height="cover" style="width:100px; z-index:99;" >
+                <div class="card-center text-center">
+                    <h1 class="font-30 text-uppercase font-900 opacity-30">SAT</h1>
+                    <h1 class="font-24 font-900">26th</h1>
+                    <h1 class="font-30 text-uppercase font-900 opacity-30">FEB</h1>
+                </div>
+            </div>
+            <div class="card-top ps-5 ms-5 pt-3" >
+                <!-- <div class="ps-4">
+                    <h1 class="color-white pt-3 pb-3">Apple Event </h1>
+                    <p class="color-white mb-0"><i class="fa fa-mobile color-white pe-2 icon-30"></i> Bench Pressing and Squats</p>
+                    <p class="color-white"><i class="fa fa-map-marker color-white pe-2 icon-30"></i> Steve Jobs Theater, Palo Alto</p>
+                    <a href="#" data-menu="menu-join" class="btn btn-m bg-white color-black font-700">Accept</a>
+                    <a href="#" data-menu="menu-join" class="btn btn-m border-white color-white font-700 ms-3">Decline</a>
+                </div> -->
+                <div class="countdown row mb-4 mt-5 ms-4 me-4">
+                    <div class="disabled">
+                        <h1 class="mb-0 color-white font-36 font-900" id="years"></h1>
+                        <p class="mt-n1 color-white font-11 opacity-30">years</p>
+                    </div>
+                    <div class="col-3 pe-0 ps-0">
+                        <h1 class="mb-0 color-white font-36 font-900" id="days"></h1>
+                        <p class="mt-n1 color-white font-11 opacity-30">days</p>
+                    </div>
+                    <div class="col-3 pe-0 ps-0">
+                        <h1 class="mb-0 color-white font-36 font-900" id="hours"></h1>
+                        <p class="mt-n1 color-white font-11 opacity-30">hours</p>
+                    </div>				
+                    <div class="col-3 pe-0 ps-0">
+                        <h1 class="mb-0 color-white font-36 font-900" id="minutes"></h1>
+                        <p class="mt-n1 color-white font-11 opacity-30">minutes</p>
+                    </div>
+                    <div class="col-3 pe-0 ps-0">
+                        <h1 class="mb-0 color-white font-36 font-900" id="seconds"></h1>
+                        <p class="mt-n1 color-white font-11 opacity-30">seconds</p>
+                    </div>	
+                    <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NXVzZHUyNG51M201MmlzMWpsNGs2dnJtN2MgbmFlbGFobm9yZGluQG0&tmsrc=naelahnordin%40gmail.com" data-menu="menu-join" class="btn btn-m bg-white color-black font-700">Add to Calendar</a>
+                    <!-- <a href="#" data-menu="menu-join" class="btn btn-m border-white color-white font-700 ms-3">Decline</a> -->
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+         
+   
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    
+    <!-- Main Menu--> 
+    <div id="menu-share" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-n1"><h1>Share the Love</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="auto_generated" class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="auto_generated" class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>   
+                <a href="auto_generated" class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
